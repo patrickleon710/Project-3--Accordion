@@ -20,7 +20,7 @@ body {
 }
 
 .accordion .accordion-title {
-    
+    font-size: 2rem;
     padding-bottom: 15px;
     text-align: center;
 }
@@ -49,4 +49,22 @@ body {
     height: 0;
     overflow: hidden;
     transition: .5s;
+}
+
+
+/* Javascript styling */
+.accordion .content-container.active .answer {
+    height: 150px;
+}
+
+.accordion .content-container.active .question {
+    font-size: 1rem;
+}
+
+.accordion .content-container.active .question::after {
+    content: '-';
+
+    font-size: 30px;
+    transition: .5s;
+    bottom: 5px;
 }
